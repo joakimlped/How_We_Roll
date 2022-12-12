@@ -3,7 +3,7 @@ Prosjektet **Felles-skapet** IS-114
 
 ### Se siden vår her
 
-> https://skogstad-beep.github.io/How_We_Roll/
+> https://joakimlped.github.io/How_We_Roll/
 
 ### Gruppe 5B
 
