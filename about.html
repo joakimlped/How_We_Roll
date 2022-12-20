@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
-    <title>UiA - Profil</title>
+    <title>UiA - Om oss</title>
     <style>
 /* Endringer på hele body bl.a. skrifttype */
 body {
@@ -45,7 +45,7 @@ body {
   font-weight: bold;
 }
 
-/* Endring av hele footer */
+/* Footer */
 footer {
   position: fixed;
   width: 100%;
@@ -73,7 +73,37 @@ footer img {
   bottom: 15px;
 }
 
-/* Endring av navbar i header */
+/* Tekst på gruppeside */
+.group-text {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* Skygge på bilder ved hover */ 
+.images img:hover {
+  transform: scale(1.02);
+  box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+}
+
+/* Endrer border radius på bilder */ 
+.images img {
+  border-radius: 10px;
+}
+
+/* Endrer til inline-block på bilder */ 
+.images {
+  display: inline-block;
+}
+
+/* Endrer tekststrl */
+.images p {
+margin: 0;
+font-size: 15px;
+}
+
+/* Header utseende på nav i header */ 
 .header {
   text-align: left;
   background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
@@ -85,7 +115,7 @@ footer img {
   color: #fff;
   font-size: 20px;
 }
-        /* Søkefunksjon, tekstfelt */
+        /* Søkefunksjon */
         #searchText {
 				float: right;
 				padding: 6px;
@@ -119,69 +149,17 @@ footer img {
 				color: #fff;
       }
 
-      /* Endring av bilde i infoboks */
-      .headerText img {
-        border-radius: 50%;
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2)
+      /* Fjerner skygge på linkedin icon */ 
+      #linkedin {
+        border-radius: 0;
+        box-shadow: none;
       }
 
-      /* Endring av infoboks */
-      .headerText {
-        background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-        width: 25%;
-        float: center;
-        border-radius: 5px;
-        padding: 5px 5px;
-        text-align: center;
-        margin: auto;
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-        color: white;
+      /* Fjerner skygge på github icon */
+      #github {
+        border-radius: 0;
+        box-shadow: none;
       }
-
-      /* Fjerne underline på teks i infoboks */
-      .headerText a {
-      text-decoration: none;
-      color: white;
-      }
-
-      /* Plassering av gå-tilbake-knapp på siden */
-      .goBack {
-        margin-left: 30px;
-      }
-      /* Fjerne underline på gå-tilbake-knapp på siden */
-      .goBack a {
-        text-decoration: none;
-        color: #090979;
-      }
-
-      /* Legge til underline på hover på gå-tilbake-knapp på siden */
-      .goBack a:hover {
-        text-decoration: underline;
-      }
-
-      /* Gjør at en class ikke er synlig */
-      .hidden {
-        display: none;
-      }
-
-      /* Viser hva et gjemt element skal vise */
-      #hidden-element {
-        background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-        width: 75%;
-        border-radius: 5px;
-        padding: 5px 5px;
-        text-align: center;
-        margin: auto;
-        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-        color: white;
-      }
-
-      /* Gjør at når man holder over en tekst, får man underline */
-      #text:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
-
 </style>
 
 </head>
@@ -201,55 +179,71 @@ footer img {
     <input type="text" id="searchText" placeholder="Søk her..">
   </div>
 
-  <!-- GFå tilbake-knapp -->
-  <div class="goBack"><p>‹ Gå tilbake til <a href="about.html"><b>om oss</b></a></p></div>
+  <!-- Profiler av gruppa -->
+  <div class="group-text">
+    <h2>Om oss</h2>
+    <p>Gruppe 5B</p>
+    <p><i>Klikk på et bilde for å se profilside</i></p>
+    <div class="group">
+    <div class="images">
+    <a href="profile-henrik.html"><img src="images/skogen.jpg" alt="Henrik Skogstad" width="200" height="200"></a>
+    <p><b>Henrik Skogstad</b></p>
+    <p><i>IT og Informasjonssystemer</i></p>
+    <p><i>Bachelor</i></p>
+    <a href="https://www.linkedin.com/in/henrik-skogstad-150b83199/"><img src="images/ln.png" id="linkedin" width="20" height="20"></a>
+    <a href="https://github.com/Skogstad-beep"><img src="images/github.png" id="github" width="20" height="20"></a>
+    </div>
+    <div class="images">
+    <a href="profile-lars.html"><img src="images/lasapasa.jpg" alt="Lars Utklev" width="200" height="200"></a>
+    <p><b>Lars Utklev</b></p>
+    <p><i>IT og Informasjonssystemer</i></p>
+    <p><i>Bachelor</i></p>
+    <a href="#"><img src="images/ln.png" id="linkedin" width="20" height="20"></a>
+    <a href="#"><img src="images/github.png" id="github" width="20" height="20"></a>
 
-  <!-- Infoboks om person-->
-  <div class="headerText">
-    <img src="images/tobby.jpg" width="200">
-    <h2>Tobias Funes</h2>
-    <p>Student</p>
-    <p><b>Universitetet i Agder</b><br>IT og Informasjonssystemer</p>
-    <p><b>Fødselsår: </b>2003</p>
-    <p><b>E-post: </b><a href="mailto:tobiasfj@uia.no">tobiasfj@uia.no</a></p>
-    <br>
-    <p id="text">Klikk her for å se mer informasjon om <b>Tobias</b></p>
-  </div>
-<br>
-<!-- Gjemt element. Når man klikker på id "tekst" ovenfor vil det gjemte elemtentet bli synlig-->
-  <div id="hidden-element" class="hidden">
-    <p><b>Om Tobias</b></p>
-    <p>Fra Kristiansand. Tekst blir oppdatert.</p>
-  </div>
+    </div>
+    <div class="images">
+    <a href="profile-christian.html"><img src="images/chrissy.jpg" alt="Christian Åbyholm" width="200" height="200"></a>
+    <p><b>Christian Åbyholm</b></p>
+    <p><i>IT og Informasjonssystemer</i></p>
+    <p><i>Bachelor</i></p>
+    <a href="#"><img src="images/ln.png" id="linkedin" width="20" height="20"></a>
+    <a href="#"><img src="images/github.png" id="github" width="20" height="20"></a>
+    </div>
+    <div class="images">
+    <a href="profile-joakim.html"><img src="images/jokke.jpg" alt="Joakim Pedersen" width="200" height="200"></a>
+    <p><b>Joakim Pedersen</b></p>
+    <p><i>IT og Informasjonssystemer</i></p>
+    <p><i>Årsstudium</i></p>
+    <a href="#"><img src="images/ln.png" id="linkedin" width="20" height="20"></a>
+    <a href="#"><img src="images/github.png" id="github" width="20" height="20"></a>
+    </div>
+    <div class="images">
+    <a href="profile-tobias.html"><img src="images/tobby.jpg" alt="Tobias Funes" width="200" height="200"></a>
+    <p><b>Tobias Funes</b></p>
+    <p><i>IT og Informasjonssystemer</i></p>
+    <p><i>Årsstudium</i></p>
+    <a href="#"><img src="images/ln.png" id="linkedin" width="20" height="20"></a>
+    <a href="#"><img src="images/github.png" id="github" width="20" height="20"></a>
+    </div>
+    <p><i>Foto: Hentet fra Facebook</i></p>
+    </div>
+ </div> 
 
-<br><br><br>
 <footer>
-  <!-- Footer-->
+  <!-- Footer -->
   <div class="footerText">
-  <p>Koding & design av gruppe 5B</p></div>
+  <p>Koding & design av gruppe 5B</p>
   <div class="footerCopy"><p>Opphavsrett &copy; 2022 <br> <b>Utdanningsprosjekt</b></p></div>
   <img src="images/footerlogo.png" width="250px" id="footerlogo">
 </footer>
 
 
   <script>
-    // Får opp en alert på nettsiden når man klikker på søkeknappen
+    // Viser en alert ved klikk på søkeknapp
     function alertSearch() {
     alert("Kun en placeholder.")
     }
 </script>
-
-<script>
-  // Get the text and hidden element by their ID
-  var textElement = document.getElementById("text");
-  var hiddenElement = document.getElementById("hidden-element");
-
-  // Add a click event listener to the text element
-  textElement.addEventListener("click", function() {
-      // Toggle the "hidden" class on the hidden element
-      hiddenElement.classList.toggle("hidden");
-  });
-</script>
-
 </body>
 </html>
