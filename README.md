@@ -16,7 +16,7 @@ kan løse inkludert brukerhistorier)
 - GITHUB-SAMARBEID (dokumenterer samarbeidsprosessen og inkluderer refleksjon)
 
 ### Oppgaven - Felles-Skapet
-**Felles-Skapet** er en samlet oppgave av flere elementer gjort iløpet av studie IS-114. Denne oppgaven har blitt utført i perioden 10 okotober 2022 til 20. desember 2022. Det har blitt lagt mye vekt på denne oppgaven, slik at den skal bli best mulig. Oppgaven har vært krevende, og det har vært mye å sette seg inn i - spesielt når det gjelder javascript. HTML og CSS har gruppen hatt en grei forståelse for. Gruppen har i helhet lært utrolig mye. Spesielt mye om hvordan man skal samarbeide i et prosjekt.
+**Felles-Skapet** er en samlet oppgave av flere elementer gjort iløpet av studie IS-114. Denne oppgaven har blitt utført i perioden 10 oktober 2022 til 20. desember 2022. Det har blitt lagt mye vekt på denne oppgaven, slik at den skal bli best mulig. Oppgaven har vært krevende, og det har vært mye å sette seg inn i - spesielt når det gjelder javascript. HTML og CSS har gruppen hatt en grei forståelse for. Gruppen har i helhet lært utrolig mye. Spesielt mye om hvordan man skal samarbeide i et prosjekt.
 
 ### Om oss
 Vi er 5 studenter ved UiA som studerer IT og informasjonssystemer 2022-kullet. Gruppen består av Christian, Lars, Joakim, Tobias og Henrik.
