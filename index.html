@@ -7,19 +7,21 @@
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
     <title>UiA - Forside</title>
     <style>
-body {
+  /* Endringer på hele body bl.a. skrifttype */
+  body {
   margin: 0;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(255, 255, 255);
 }
 
+/* Endringer på overskrift/logo, i dette tilfelle til bold skrift */ 
 .header {
   font-weight: bold;
 }
 
 /* Bakgrunnsfarge bak navigasjonen */
 .topnav {
-  background-color: rgb(78, 101, 166);
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
   overflow: hidden;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
 }
@@ -28,7 +30,6 @@ body {
 .topnav a {
   float: left;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -50,26 +51,32 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  background-color: #333;
+  height: 60px;
+  background: #090961;
   color: #fff;
   padding: 10px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
 } 
 
-footer p {
-  text-align: center;
+/*Endringer av midtstilt tekst (copyright tekst) i footer */
+.footerCopy {
+    position: absolute;
+    width:100%;
+    bottom:0;
+    text-align: center;
 }
 
+/* Endring av bilde i footer */ 
 footer img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
 }
 
-/* Overskrift øverst på siden */
+/* Endring av navbar i header */
 .header {
   text-align: left;
-  background-color: rgb(78, 101, 166);
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
   height: 10px;
   width: auto;
   padding-top: 10px;
@@ -78,7 +85,7 @@ footer img {
   color: #fff;
   font-size: 20px;
 }
-        /* Søkefunksjon */
+        /* Søkefunksjon, tekstfelt */
         #searchText {
 				float: right;
 				padding: 6px;
@@ -89,10 +96,11 @@ footer img {
         right: 363px;
 			}
 
+      /* Søkefunksjon, søkeknapp */
 			#searchBtn {
 				float: right;
 				border: none;
-				background-color: rgb(53, 70, 119);
+				background-color: #151589;
 				font-size: 16px;
 				cursor: pointer;
 				height: 31.5px;
@@ -105,117 +113,20 @@ footer img {
         right: 310px;
 			}
 
+      /* Endring av når du holder over søkeknapp */
 			#searchBtn:hover {
-				background-color: rgb(60, 78, 125);
+				background-color: #222290;
 				color: #fff;
       }
 
-      .welcomeText {
-        text-align: center;
-      }
-
-      .popup-container {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .btn {
-        background: transparent;
-        border: 0;
-        outline: none;
-        cursor: pointer;
-        font-size: 15px;
-        font-weight: 500;
-        border-radius: 30px;
-        color: rgb(255, 255, 255);
-        position: absolute; 
-        top: 0px; 
-        right: 0px;
-      }
-
-      .btn:hover {
-        text-decoration: underline;
-      }
-      .popup {
-        width: 400px;
-        background: rgb(78, 101, 166);
-        border-radius: 6px;
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.1);
-        text-align: center;
-        padding: 0 30px 30px;
-        color: white;
-        visibility: hidden;
-        transition: transform 0.4s, top 0.4s;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      }
-      
-      .open-popup {
-        visibility: visible;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(1);
-      }
-      .popup img {
-        width: 100px;
-        margin-top: -50px;
-        border-radius: 50%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
-      }
-      
-      .popup h2 {
-        font-size: 38px;
-        font-weight: 500;
-        margin: 30px 0 10px;
-      }
-
-      .popup a {
-        text-decoration: none;
-        color: white;
-      }
-
-      .popup a:hover {
-        text-decoration: underline;
-      }
-      
-      .popup button {
-        width: 100%;
-        margin-top 50px;
-        padding: 10px 0;
-        background: #6fd649;
-        color: #fff;
-        border: 0;
-        outline: none;
-        font-size: 18px;
-        border-radius: 4px;
-        cursor: pointer;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
-      }
-
-      .popup button:hover {
-        background: #6cbc4f;
-      }
-
-      footer a {
-        text-decoration: none;
-        color: white;
-        text-align: left;
-      }
-
-      footer .privacyCookies a:hover {
-        text-decoration: underline;
-      }
-
-      .pendulum{
+    /* Lager et pendulum på forsiden for å visualisere gruppa på en gøy måte */
+    .pendulum{
 		display: flex;
 		width: 220px;
 		height: 180px;
 		border-radius: 5%;
-		border-top: 15px solid #000000;
+		border-top: 15px solid;
+    border-image: linear-gradient(to right,#090979,#00d4ff) 1 0 0 0;
 		margin: 0 auto;
 	}
 
@@ -272,83 +183,71 @@ footer img {
 	.circlePic {
 		height: 40px;
 	}
-    </style>
+
+  .welcomeText {
+        text-align: center;
+        background-color: ;
+      }
+
+</style>
 
 </head>
 <body>
-
+  <!-- Header + navbar-->
   <div class="header">UiA Prosjekt ⇢ Felles-skapet</div>
   <div class="topnav">
     <a class="active" href="index.html">Forside</a>
-    <a href="howweroll.html">Skjema</a>
-    <a href="hwr-report.html">Rapport</a>
-    <a href="ourgroup.html">Om oss</a>
+    <a href="form.html">Skjema</a>
+    <a href="report.html">Rapport</a>
+    <a href="calendar.html">Kalender</a>
+    <a href="about.html">Om oss</a>
     <a href="https://github.com/Skogstad-beep/HOWWEROLL">GitHub</a>
+    <a href="https://lasapasa.github.io/flaggoppgave/">Flaggoppgave</a>
+    <a href="https://www.figma.com/file/8fJcJRzjOVUvqOquZDizvX/HowWeRoll?node-id=0%3A1&t=D3OBFuBLFlvVVMr8-1">Figma</a>
     <input type="button" id="searchBtn" value="Søk" onclick="alertSearch()">
-    <input type="text" id="searchText" placeholder="Søk...">
+    <input type="text" id="searchText" placeholder="Søk her..">
   </div>
-
+ 
+  <!-- Tekst på forsiden -->
   <div class="welcomeText">
-  <h2>Velkommen</h2>
-  <p>Prosjekt <b>«HowWeRoll»</b> <br> IS-114</p>
-  </div> 
-
-  <div class="pendulum">
-    <div class="pendulum_box">
-      <div class="ball first">
-        <img src="images/skogen-modified.png" class="circlePic">
-      </div>
-      <div class="ball">
-        <img src="images/lasapasa-modified.png" class="circlePic">
-      </div>
-      <div class="ball">
-        <img src="images/chrissy-modified.png" class="circlePic">
-      </div>
-      <div class="ball">
-        <img src="images/jokke-modified.png" class="circlePic">
-      </div>
-      <div class="ball last">
-        <img src="images/tobby-modified.png" class="circlePic">
-      </div>
-    </div>
-
-  <div class="popup-container">
-    <button type="submit" class="btn" onclick="openPopup()">Credits</button>
-    <div class="popup" id="popup">
-      <img src="images/veriMark.png">
-      <h2>Takk!</h2>
-      <p><a href="https://skogstad-beep.github.io/">Henrik</a>, Lars, Christian, Joakim & Tobias</p>
-      <p>Made with ❤️️</p>
-      <button type="button" onclick="closePopup()">OK</button>
-    </div>
-  </div>
+    <h2>Velkommen</h2>
+    <p>Prosjekt <b>«HowWeRoll»</b> <br> IS-114</p>
+    </div> 
   
-  <footer>
-      <div class="privacyCookies">
-      <a href="privacy.html">Personvern</a>
-      <br>
-      <a href="cookies.html">Informasjonskapsler</a>
+    <!-- Pendulum som viser gruppe på en gøy måte -->
+    <div class="pendulum">
+      <div class="pendulum_box">
+        <div class="ball first">
+          <img src="images/skogen-modified.png" class="circlePic">
+        </div>
+        <div class="ball">
+          <img src="images/lasapasa-modified.png" class="circlePic">
+        </div>
+        <div class="ball">
+          <img src="images/chrissy-modified.png" class="circlePic">
+        </div>
+        <div class="ball">
+          <img src="images/jokke-modified.png" class="circlePic">
+        </div>
+        <div class="ball last">
+          <img src="images/tobby-modified.png" class="circlePic">
+        </div>
       </div>
-      <p>Opphavsrett &copy; 2022 <br> <b>Utdanningsprosjekt</b></p>
-      <img src="images/footerlogo.png" width="250px" id="footerlogo">
-  </footer>
+      
+<footer>
+  <!-- Footer -->
+  <div class="footerText">
+  <p>Koding & design av gruppe 5B</p>
+  <div class="footerCopy"><p>Opphavsrett &copy; 2022 <br> <b>Utdanningsprosjekt</b></p></div>
+  <img src="images/footerlogo.png" width="250px" id="footerlogo">
+</footer>
+
 
   <script>
-    let popup = document.getElementById("popup");
-
-    function openPopup(){
-      popup.classList.add("open-popup");
+  // Viser en alert når ved klikk på søkeknapp
+    function alertSearch() {
+    alert("Kun en placeholder.")
     }
-
-    function closePopup(){
-      popup.classList.remove("open-popup");
-    }
-  </script>
-
-  <script>
-    			function alertSearch() {
-			    alert("Kun en placeholder.")
-			}
-  </script>
+</script>
 </body>
 </html>
