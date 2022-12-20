@@ -15,17 +15,17 @@ kan løse inkludert brukerhistorier)
 - FS-TEST
 - GITHUB-SAMARBEID (dokumenterer samarbeidsprosessen og inkluderer refleksjon)
 
-# Oppgaven - Felles-Skapet
+### Oppgaven - Felles-Skapet
 **Felles-Skapet** er en samlet oppgave av flere elementer gjort iløpet av studie IS-114. Denne oppgaven har blitt utført i perioden 10 okotober 2022 til 20. desember 2022. Det har blitt lagt mye vekt på denne oppgaven, slik at den skal bli best mulig. Oppgaven har vært krevende, og det har vært mye å sette seg inn i - spesielt når det gjelder javascript. HTML og CSS har gruppen hatt en grei forståelse for. Gruppen har i helhet lært utrolig mye. Spesielt mye om hvordan man skal samarbeide i et prosjekt.
 
-## Om oss
+### Om oss
 Vi er 5 studenter ved UiA som studerer IT og informasjonssystemer 2022-kullet. Gruppen består av Christian, Lars, Joakim, Tobias og Henrik.
 
-## GitHub Projects
+### GitHub Projects
 
 Vi brukte GitHub-projects aktivt for å notere ned alt av oppgaver som skulle gjøres. Vi prøvde å få dele opp oppgavene i mindre biter, for å prøve å få oppgavene jevnt fordelt utover gruppen. Vi brukte en kanban-modell i projects for å visualisere dette.
 
 Dersom det oppsto feil med oppgaver som var fullført i projects, noterte vi dem ned i issues, for å kunne fikse dem videre. Da får vi en enkel oversikt over alt som må gjøres.
 
-## Refleksjoner på oppgaven og sammarbeid
+### Refleksjoner på oppgaven og samarbeid
 Jeg synes at gruppen i sin helhelt har jobbet bra med prosjektet. Vi har klart å fordelt tilnærmet like mange oppgaver til hver enkelt gruppemedlem. Vi har også prøvd å delegere oppgaver etter erfaring, men også gi noen av "nybegynnerne" oppgaver dem må finne ut mye informasjon om. Alt i alt tror jeg hele gruppen har lært utrolig mye av oppgaven.
