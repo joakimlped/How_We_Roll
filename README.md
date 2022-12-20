@@ -28,4 +28,4 @@ Vi brukte GitHub-projects aktivt for å notere ned alt av oppgaver som skulle gj
 Dersom det oppsto feil med oppgaver som var fullført i projects, noterte vi dem ned i issues, for å kunne fikse dem videre. Da får vi en enkel oversikt over alt som må gjøres.
 
 ## Refleksjoner på oppgaven og sammarbeid
-Jeg synes at gruppen i sin helhelt har jobbet bra med prosjektet. Vi har klart å fordelt tilnærmet like mange oppgaver til hver enkelt gruppemedlem. Vi har også prøvd å delegere oppgaver etter erfaring, men også gi noen av "bybegynnerne" oppgaver dem må finne ut mye informasjon om. Alt i alt tror jeg hele gruppen har lært utrolig mye av oppgaven.
+Jeg synes at gruppen i sin helhelt har jobbet bra med prosjektet. Vi har klart å fordelt tilnærmet like mange oppgaver til hver enkelt gruppemedlem. Vi har også prøvd å delegere oppgaver etter erfaring, men også gi noen av "nybegynnerne" oppgaver dem må finne ut mye informasjon om. Alt i alt tror jeg hele gruppen har lært utrolig mye av oppgaven.
